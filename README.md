@@ -1,6 +1,6 @@
 # AgentReeve skills
 
-Agent skills for [AgentReeve](https://agentreeve.com): Bitcoin market data, plus funding, basis and open interest for every crypto perpetual on Binance, Bybit, OKX and Hyperliquid, for AI agents, paid per request over x402 (USDC on Base), with a free preview and free samples of every product.
+Agent skills for [AgentReeve](https://agentreeve.com): crypto market data for AI agents, with price, candles, derivatives, positioning, liquidity and a one-call snapshot for any coin (`asset=`), scanners across every perpetual on Binance, Bybit, OKX and Hyperliquid, and Bitcoin in depth, paid per request over x402 (USDC on Base), with a free preview and free samples of every product.
 
 | Skill | What it does |
 |---|---|
