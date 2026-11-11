@@ -9,7 +9,8 @@ Agent skills for [AgentReeve](https://agentreeve.com): Bitcoin market data, plus
 | `btc-market-brief` | A short, data-backed Bitcoin market brief |
 | `btc-derivatives-check` | Funding, positioning, liquidations and order-book walls before a trade |
 | `btc-similar-setups` | What BTC did after past moments that looked like now |
-| `crypto-funding-scanner` | Extreme funding, cross-exchange funding spreads and open-interest movers across all coins |
+| `crypto-funding-scanner` | Extreme funding, cross-exchange funding spreads, open-interest movers and crowded trades across every perpetual |
+| `crypto-coin-check` | Everything about any coin before a trade: derivatives, positioning, liquidity and the best exchange |
 
 Each skill is instructions only: no scripts, no keys. Agents verify the payment quote (payout address, Base, USDC), keep to a per-task spending cap, try the free samples first and never invent data. Observational market data, not financial advice.
 

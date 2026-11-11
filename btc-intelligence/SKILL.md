@@ -1,7 +1,7 @@
 ---
 name: agentreeve-btc-intelligence
 description: Bitcoin market data for agents from AgentReeve, plus funding, basis and open interest for every crypto perpetual on Binance, Bybit, OKX and Hyperliquid - prices and candles across exchanges, derivatives, options and volatility, long/short positioning, liquidations, order-book walls, Hyperliquid whale flow and historical analogues. Free preview and free samples; live data per request over x402 (USDC on Base), no account or API key.
-version: 2.1.0
+version: 2.2.0
 ---
 # AgentReeve BTC Intelligence
 
@@ -30,6 +30,11 @@ Use this when the user asks about the Bitcoin market and needs real data rather 
 | Extreme funding across all coins, funding spreads | `crypto/funding` | $0.03 |
 | One coin's funding, basis, OI on every exchange | `crypto/perp?asset=ETH` | $0.02 |
 | Where leverage is building or unwinding | `crypto/oi-movers` | $0.03 |
+| Crowded longs and shorts across all coins | `crypto/crowded` | $0.04 |
+| Everything about one coin before a trade | `crypto/coin?asset=SOL` | $0.05 |
+| Order-book liquidity and slippage, any coin | `crypto/coin-liquidity?asset=SOL` | $0.03 |
+| Long/short positioning, any coin | `crypto/coin-positioning?asset=SOL` | $0.03 |
+| Candles, any coin | `crypto/coin-candles?asset=SOL` | $0.02 |
 
 Bitcoin products: `https://agentreeve.com/api/v1/btc/<product>`; all-coin products: `https://agentreeve.com/api/v1/crypto/<product>`. Prices may change: the 402 quote is authoritative.
 

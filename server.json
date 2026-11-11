@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.shakeelamjid/agentreeve",
   "title": "AgentReeve BTC Intelligence",
-  "description": "Bitcoin and all-crypto perpetuals data for AI agents: 31 products via x402, free samples.",
-  "version": "0.16.0",
+  "description": "Bitcoin in depth plus every crypto perpetual, for AI agents: 36 products via x402, free samples.",
+  "version": "0.17.0",
   "websiteUrl": "https://agentreeve.com",
   "repository": {
     "url": "https://github.com/shakeelamjid/agentreeve-skills",
