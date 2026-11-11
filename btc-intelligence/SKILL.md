@@ -1,7 +1,7 @@
 ---
 name: agentreeve-btc-intelligence
-description: Bitcoin market data for agents from AgentReeve - prices and candles across exchanges, derivatives, options and volatility, long/short positioning, liquidations, order-book walls, Hyperliquid whale flow and historical analogues. Free preview and free samples; live data per request over x402 (USDC on Base), no account or API key.
-version: 2.0.0
+description: Bitcoin market data for agents from AgentReeve, plus funding, basis and open interest for every crypto perpetual on Binance, Bybit, OKX and Hyperliquid - prices and candles across exchanges, derivatives, options and volatility, long/short positioning, liquidations, order-book walls, Hyperliquid whale flow and historical analogues. Free preview and free samples; live data per request over x402 (USDC on Base), no account or API key.
+version: 2.1.0
 ---
 # AgentReeve BTC Intelligence
 
@@ -27,8 +27,11 @@ Use this when the user asks about the Bitcoin market and needs real data rather 
 | What happened after similar setups | `similar-setups` | $0.08 |
 | A short written market brief | `brief` | $0.03 |
 | A question in plain English | `POST ask` with `{"question": "..."}` | $0.15 |
+| Extreme funding across all coins, funding spreads | `crypto/funding` | $0.03 |
+| One coin's funding, basis, OI on every exchange | `crypto/perp?asset=ETH` | $0.02 |
+| Where leverage is building or unwinding | `crypto/oi-movers` | $0.03 |
 
-All products: `https://agentreeve.com/api/v1/btc/<product>`. Prices may change: the 402 quote is authoritative.
+Bitcoin products: `https://agentreeve.com/api/v1/btc/<product>`; all-coin products: `https://agentreeve.com/api/v1/crypto/<product>`. Prices may change: the 402 quote is authoritative.
 
 ## Paying safely (read before any paid call)
 - A paid call first answers HTTP 402 with a quote. Pay only if the quote's `payTo` is **0xDeA94ef76afa86bf1638B645F76108dF65890c0b**, the network is Base (`eip155:8453`) and the asset is USDC. Otherwise stop and tell the user.
@@ -37,4 +40,4 @@ All products: `https://agentreeve.com/api/v1/btc/<product>`. Prices may change: 
 - HTTP 503 or an error means no fresh data: say so. **Never invent or estimate numbers.** Failed calls are never charged.
 - This is observational market data, not financial advice. Say so when relaying it.
 
-Also available over MCP (`https://agentreeve.com/mcp`, tools `btc_free_preview`, `btc_free_sample`, `paid_endpoint`) and A2A (`https://agentreeve.com/.well-known/agent-card.json`). Full reference: `https://agentreeve.com/llms.txt`.
+Also available over MCP (`https://agentreeve.com/mcp`, tools `btc_free_preview`, `btc_list_products`, `btc_free_sample`, `btc_product`) and A2A (`https://agentreeve.com/.well-known/agent-card.json`). Full reference: `https://agentreeve.com/llms.txt`.
