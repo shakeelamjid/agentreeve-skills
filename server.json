@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.shakeelamjid/agentreeve",
+  "title": "AgentReeve BTC Intelligence",
+  "description": "Bitcoin market data for AI agents: 28 products via x402, with a free preview and free samples.",
+  "version": "0.14.0",
+  "websiteUrl": "https://agentreeve.com",
+  "repository": {
+    "url": "https://github.com/shakeelamjid/agentreeve-skills",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentreeve.com/mcp"
+    }
+  ]
+}
